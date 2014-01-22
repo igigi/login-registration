@@ -1,0 +1,3 @@
+class UsersApi < BaseApi
+
+end

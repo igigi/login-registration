@@ -1,0 +1,11 @@
+source 'https://rubygems.org'
+
+gem 'sinatra'
+gem 'sinatra-contrib'
+gem 'rake'
+gem 'activerecord'
+gem 'json'
+gem 'unicorn'
+gem 'sqlite3'
+gem 'rspec'
+gem 'rack-test'
