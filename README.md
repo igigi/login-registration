@@ -11,7 +11,8 @@ Daphne
 *    1. users 表中存储了用户信息，其中status 列表明了用户当前的状态，包括初始化（仅提交了注册，未验证）/正常/封禁
 *    2. captchas 表中存储了验证码信息，和users 表是多对一的关系，其中available 列表示是否可用
 *    3. tokens 表中存储了token数据，和users 表是多对一的关系
-    任何请求返回的内容为json格式，从类型角度来说，分为SuccessResult和FailureResulte，范例如下：
+
+>    任何请求返回的内容为json格式，从类型角度来说，分为SuccessResult和FailureResulte，范例如下：
 *    { result: 'success', data: (业务逻辑返回的数据，Hash 或 Array) }
 *    { result: 'failure', code: 100, message: '错误信息' }
 
