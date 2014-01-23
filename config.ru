@@ -8,9 +8,10 @@ APP_ROOT = File.expand_path(File.join(File.dirname(__FILE__), '.'))
 
 api_dir = File.dirname(__FILE__) + '/app/apis/*.rb'
 model_dir = File.dirname(__FILE__) + '/app/models/*.rb'
+helper_dir = File.dirname(__FILE__) + '/app/helpers/*.rb'
 config_dir = File.dirname(__FILE__) + '/config/initializers/*.rb'
 lib_dir = File.dirname(__FILE__) + '/lib/*.rb'
-Dir[api_dir, model_dir, config_dir, lib_dir].each { |file| require file }
+Dir[api_dir, model_dir, helper_dir, config_dir, lib_dir].each { |file| require file }
 
 run Rack::URLMap.new({
   "/s" => SessionsApi,
